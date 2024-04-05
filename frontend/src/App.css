@@ -1,0 +1,231 @@
+* {
+  margin: 0;
+}
+
+#App {
+  display: flex;
+  flex-direction: column;
+}
+
+#topBar {
+  position: sticky;
+  top: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  padding: 20px 100px;
+  background: rgb(0, 0, 0, 0.2);
+  z-index: 100;
+}
+
+#logoTopBar {
+  height: 100%;
+}
+
+#topBar a {
+  color: white;
+}
+
+#landingBackground {
+  height: 100%;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+#box1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 80px 18% 100px 18%;
+  background-color: rgba(0, 0, 0, .6);
+  height: calc(100vh - 320px);
+}
+
+#text1 {
+  color: white;
+  font-size: 120px;
+  text-align: center;
+
+}
+
+#text2 {
+  color: white;
+  font-size: 40px;
+  text-align: center;
+}
+
+#box2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#miniBox2 {
+  display: flex;
+  flex-direction: row;
+
+
+}
+
+#box3 {
+  background-color: #0078D7; /* Blue color */
+  background-image: url('./assets/print.jpg'); /* URLs of cat print images */
+  background-position: 0px 0px, 200px 300px, 500px 600px; /* Random positions for each image */
+  background-repeat: no-repeat; /* Don't repeat the images */
+  /*
+  background-color: rgb(44, 94, 114);
+  background-color: linear-gradient(180deg, rgba(44, 94, 114, 1) 0%, rgba(0, 255, 255, 1) 20%);
+  background-image: url('./assets/print.jpg');
+    background-repeat: repeat;
+    background-position: center;
+    background-size: 20px;*/
+  padding: 150px 18% 100px 18%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+
+#box4 {
+  background: rgb(0, 255, 255);
+  background: linear-gradient(180deg, rgba(0, 255, 255, 1) 0%, rgba(44, 94, 114, 1) 20%);
+  padding: 180px 18% 100px 18%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+#logoBox4 {
+  height: 200px;
+}
+
+#miniBox4 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  align-items: center;
+}
+
+#box5 {
+  background: rgb(44, 94, 114);
+  background: linear-gradient(180deg, rgba(44, 94, 114, 1) 0%, rgba(0, 255, 255, 1) 20%);
+  padding: 150px 18% 100px 18%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+#box6 {
+  background: rgb(0, 255, 255);
+  background: linear-gradient(180deg, rgba(0, 255, 255, 1) 0%, rgba(44, 94, 114, 1) 20%);
+  padding: 150px 18% 100px 18%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+#box7 {
+  background: rgb(44, 94, 114);
+  background: linear-gradient(180deg, rgba(44, 94, 114, 1) 0%, rgba(0, 255, 255, 1) 20%);
+  padding: 150px 18% 100px 18%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+#overlay {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 140px;
+  background-color: rgba(0, 0, 0, .6);
+}
+
+.titleBox {
+  font-size: 80px;
+}
+
+.subTitleBox {
+  font-size: 30px;
+}
+
+.whiteP {
+  color: white;
+}
+
+.blackP {
+  color: black;
+}
+
+.testMiniBox4 {
+  width: 20vw;
+  color: white;
+  border: 5px dashed gold;
+  padding: 20px;
+  font-size: 30px;
+}
+#miniBox5{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  gap: 20px;
+}
+.underMiniBox5{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  border: 5px dashed gold;
+  font-size: 30px;
+  padding: 20px;
+
+}
+@media screen and (max-width: 1500px) {
+  #text1 {
+    font-size: 80px;
+  }
+
+  #text2 {
+    font-size: 30px;
+  }
+
+  #box1 {
+    padding: 50px 18%;
+    height: calc(100vh - 190px);
+  }
+
+  #topBar {
+    height: 70px;
+    padding: 10px 100px;
+  }
+
+  #overlay {
+
+    height: 90px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  #text1 {
+    font-size: 60px;
+  }
+
+  #text2 {
+    font-size: 20px;
+  }
+}

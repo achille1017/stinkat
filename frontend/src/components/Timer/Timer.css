@@ -1,0 +1,12 @@
+.Timer {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+.timerBox{
+    display: flex;
+    flex-direction: row;
+}
+.timerP{
+    color: white;
+}
