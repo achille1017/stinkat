@@ -8,14 +8,18 @@ function App() {
     <div className="App">
       <div id="topBar">
         <img id="logoTopBar" src={logo}></img>
-        <div>
-
+        <div id='linksNavBar'>
+          <a className='linkNavBar' href='#box3'>ABOUT</a>
+          <a className='linkNavBar' href='#box5'>TOKENOMICS</a>
+          <a className='linkNavBar' href='https://twitter.com/stinkatbase'>TWITTER</a>
+          <a className='linkNavBar'>TELEGRAM</a>
         </div>
-        <Timer deadline="2024-04-15"></Timer>
-
+        <div id='timerDiv'>
+          <Timer deadline="2024-04-15"></Timer>
+          <p className="timerP">before the official launch.</p></div>
       </div>
       <div id="box1">
-        <p id="text1">STINKAT</p>
+        <p id="text1" className='LemonMilk'>$TINKAT</p>
         <p id="text2">
           Get ready for a paw-some adventure with Based Shiba, the newest sensation on the BASE blockchain! Embracing the spirit of memes and good vibes, Based Shiba is not just a token; it’s a community-driven movement that’s here to shake things up in the crypto world.
         </p>
@@ -60,11 +64,11 @@ function App() {
       <div id="box5">
         <p className='titleBox blackP'>TOKENOMICS</p>
         <div className='underMiniBox5'>
-            <p>TOKEN ADDRESS</p>
-            <p>0xfEA9DcDc9E23a9068bF557AD5b186675C61d33eA</p>
-          </div>
+          <p>TOKEN ADDRESS</p>
+          <p>0xfEA9DcDc9E23a9068bF557AD5b186675C61d33eA</p>
+        </div>
         <div id='miniBox5'>
-          
+
           <div className='underMiniBox5'>
             <p>
               TOKEN SUPPLY</p>
@@ -80,28 +84,29 @@ function App() {
             </p>
           </div>
         </div>
-        <p>No taxes, ​liquidity locked, contract ownership renounced. It’s that simple.</p>
+        <p>No taxes, liquidity locked, contract ownership renounced. It’s that simple.</p>
       </div>
       <div id="box6">
         <p className='titleBox whiteP'>HOW TO BUY</p>
-        <div>
-          <p>Get ETH</p>
-          <p></p>
+        <div className='lineHowToBuy'>
+          <p className='numberHTB'>1</p>
+          <p className='howToBuyP'>Buy ETH from your favorited CEX such as Binance or coinbase.  Bridge your eth from ethereum to base using Orbiter.finance .</p>
         </div>
-        <div>
-          <p>Bridge your ETH</p>
-          <p></p>
+        <div className='lineHowToBuy'>
+          <p className='numberHTB'>2</p>
+          <p className='howToBuyP'>Connect Your wallet to Uniswap.  Make Sure you're using the Base Network.  Paste our official CA.</p>
         </div>
-        <div>
-          <p>SWITCH YOUR BASE ETH FOR $STINKAT</p>
-          <p></p>
+
+        <div className='lineHowToBuy'>
+          <p className='numberHTB'>3</p>
+          <p className='howToBuyP'>Buy $BRATT.  Do Not Jeet.  Take out your initials if you have to.  Most importantly, HOLD until we reach the millions.</p>
         </div>
       </div>
       <div id="box7">
         <p className='titleBox'>JOIN US NOW</p>
-        <div>  
-                <a>TWITTER</a>
-          <a>TELEGRAM</a>
+        <div id='joinUsDiv'>
+          <a className='linkJoinUs'>TWITTER</a>
+          <a className='linkJoinUs'>TELEGRAM</a>
         </div>
       </div>
       <img src={landingBackground} id="landingBackground"></img>

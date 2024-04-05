@@ -28,7 +28,7 @@ export const Timer = ({ deadline = new Date().toString() }) => {
         Seconds: (time / SECOND) % 60,
       }).map(([label, value]) => (
         <div key={label} className="timerBox">
-          <p className="timerP">{`${Math.floor(value)}`.padStart(2, "0")} {" "+label}{label==="Seconds"&& " before the official launch."}</p>
+          <p className="timerP">{`${Math.floor(value)}`.padStart(2, "0")}{" "+label}</p>
         </div>
       ))}
     </div>

@@ -1,6 +1,18 @@
 * {
   margin: 0;
 }
+a {
+  text-decoration: none;
+}
+@font-face {
+  font-family: LemonMilk;
+  src: url('./assets/lemon_milk/LEMONMILK-Regular.otf');
+}
+
+@font-face {
+  font-family: Rubik;
+  src: url('./assets/Rubik/Rubik-VariableFont_wght.ttf');
+}
 
 #App {
   display: flex;
@@ -20,14 +32,35 @@
   z-index: 100;
 }
 
+#linksNavBar {
+  display: flex;
+  flex-direction: row;
+
+  gap: 30px;
+}
+
+.linkNavBar {
+  font-family: LemonMilk;
+  font-family: 30px;
+  font-weight: 700;
+}
+.LemonMilk{
+  font-family: LemonMilk;
+}
 #logoTopBar {
   height: 100%;
+  margin-right: 11%;
 }
 
 #topBar a {
   color: white;
 }
-
+#timerDiv{
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  align-items: flex-end;
+}
 #landingBackground {
   height: 100%;
   left: 0;
@@ -75,8 +108,8 @@
 
 #box3 {
 
-  background: rgb(44, 94, 114);
-  background: linear-gradient(180deg, rgba(44, 94, 114, 1) 0%, rgba(0, 255, 255, 1) 20%);
+  background: rgb(0, 255, 255);
+  background-image: url('./assets/prints.png');
   padding: 150px 18% 100px 18%;
   display: flex;
   flex-direction: column;
@@ -86,8 +119,8 @@
 
 #box4 {
   background: rgb(0, 255, 255);
-  background: linear-gradient(180deg, rgba(0, 255, 255, 1) 0%, rgba(44, 94, 114, 1) 20%);
-  padding: 180px 18% 100px 18%;
+  background: linear-gradient(180deg, rgba(0, 255, 255, 1) 0%, rgba(44, 94, 114, 1) 20%, rgba(44, 94, 114, 1) 80%, rgba(0, 255, 255, 1) 100%);
+  padding: 200px 18% 200px 18%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -107,8 +140,8 @@
 }
 
 #box5 {
-  background: rgb(44, 94, 114);
-  background: linear-gradient(180deg, rgba(44, 94, 114, 1) 0%, rgba(0, 255, 255, 1) 20%);
+  background: rgb(0, 255, 255);
+  background-image: url('./assets/prints2.png');
   padding: 150px 18% 100px 18%;
 
   display: flex;
@@ -119,8 +152,8 @@
 
 #box6 {
   background: rgb(0, 255, 255);
-  background: linear-gradient(180deg, rgba(0, 255, 255, 1) 0%, rgba(44, 94, 114, 1) 20%);
-  padding: 150px 18% 100px 18%;
+  background: linear-gradient(180deg, rgba(0, 255, 255, 1) 0%, rgba(44, 94, 114, 1) 20%, rgba(44, 94, 114, 1) 80%, rgba(0, 255, 255, 1) 100%);
+  padding: 200px 18% 220px 18%;
 
   display: flex;
   flex-direction: column;
@@ -129,9 +162,9 @@
 }
 
 #box7 {
-  background: rgb(44, 94, 114);
-  background: linear-gradient(180deg, rgba(44, 94, 114, 1) 0%, rgba(0, 255, 255, 1) 20%);
-  padding: 150px 18% 100px 18%;
+  background: rgb(0, 255, 255);
+  background-image: url('./assets/prints.png');
+  padding: 80px 18% 100px 18%;
 
   display: flex;
   flex-direction: column;
@@ -150,12 +183,37 @@
 
 .titleBox {
   font-size: 80px;
+  font-family: LemonMilk;
 }
 
 .subTitleBox {
   font-size: 30px;
-}
+  background-color: rgb(255, 255, 255, 0.1);
+  font-family: Rubik;
+  padding: 24px;
+  border-radius: 16px;
 
+}
+.howToBuyP{
+  font-size: 30px;
+  background-color: rgb(255, 255, 255, 0.1);
+  font-family: Rubik;
+  padding: 24px;
+  border-radius: 16px;
+  color: white;
+  width: 85%;
+  text-align: justify;
+}
+.lineHowToBuy{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.numberHTB{
+  font-size: 100px;
+  font-family: LemonMilk;
+  color: white;
+}
 .whiteP {
   color: white;
 }
@@ -189,7 +247,23 @@
   padding: 20px;
 
 }
-
+#joinUsDiv{
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
+  width: 100%;
+  justify-content: center;
+}
+.linkJoinUs{
+  font-size: 50px;
+  font-family: LemonMilk;
+  color: rgb(0, 68, 255);
+  background-color: rgb(255, 255, 255, 0.7);
+  padding: 24px;
+  border-radius: 16px;
+  width: 25%;
+  text-align: center;
+}
 @media screen and (max-width: 1500px) {
   #text1 {
     font-size: 80px;
