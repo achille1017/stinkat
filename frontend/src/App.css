@@ -1,9 +1,11 @@
 * {
   margin: 0;
 }
+
 a {
   text-decoration: none;
 }
+
 @font-face {
   font-family: LemonMilk;
   src: url('./assets/lemon_milk/LEMONMILK-Regular.otf');
@@ -44,9 +46,11 @@ a {
   font-family: 30px;
   font-weight: 700;
 }
-.LemonMilk{
+
+.LemonMilk {
   font-family: LemonMilk;
 }
+
 #logoTopBar {
   height: 100%;
   margin-right: 11%;
@@ -55,12 +59,14 @@ a {
 #topBar a {
   color: white;
 }
-#timerDiv{
+
+#timerDiv {
   display: flex;
   flex-direction: column;
   gap: 6px;
   align-items: flex-end;
 }
+
 #landingBackground {
   height: 100%;
   left: 0;
@@ -110,7 +116,7 @@ a {
 
   background: rgb(0, 255, 255);
   background-image: url('./assets/prints.png');
-  padding: 150px 18% 100px 18%;
+  padding: 0px 18% 100px 18%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -126,7 +132,11 @@ a {
   align-items: center;
   gap: 40px;
 }
-
+#transition{
+  width: 100%;
+  height: 300px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 255, 255, 1) 100%);
+}
 #logoBox4 {
   height: 200px;
 }
@@ -194,7 +204,8 @@ a {
   border-radius: 16px;
 
 }
-.howToBuyP{
+
+.howToBuyP {
   font-size: 30px;
   background-color: rgb(255, 255, 255, 0.1);
   font-family: Rubik;
@@ -204,16 +215,20 @@ a {
   width: 85%;
   text-align: justify;
 }
-.lineHowToBuy{
+
+.lineHowToBuy {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
-.numberHTB{
+
+.numberHTB {
   font-size: 100px;
   font-family: LemonMilk;
   color: white;
 }
+
 .whiteP {
   color: white;
 }
@@ -247,14 +262,16 @@ a {
   padding: 20px;
 
 }
-#joinUsDiv{
+
+#joinUsDiv {
   display: flex;
   flex-direction: row;
   gap: 60px;
   width: 100%;
   justify-content: center;
 }
-.linkJoinUs{
+
+.linkJoinUs {
   font-size: 50px;
   font-family: LemonMilk;
   color: rgb(0, 68, 255);
@@ -264,7 +281,60 @@ a {
   width: 25%;
   text-align: center;
 }
+
+#katVert {
+  height: 400px;
+}
+
+#tokenBox {
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+  align-items: center;
+}
+
+#tokenBox2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.tokenP {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.tokenP1 {
+  font-size: 80px;
+  font-weight: 700;
+}
+
+.tokenP2 {
+  font-size: 16px;
+}
+
 @media screen and (max-width: 1500px) {
+  .timerP{
+    font-size: 10px;
+  }
+  .subTitleBox {
+    font-size: 20px;
+  }
+  .howToBuyP {
+    font-size: 20px;
+    padding: 10px;
+  }
+  .numberHTB{
+    font-size: 60px;
+  }
+  .testMiniBox4 {
+    font-size: 16px;
+  }
+
+  .titleBox {
+    font-size: 50px;
+  }
+
   #text1 {
     font-size: 80px;
   }
@@ -286,6 +356,9 @@ a {
   #overlay {
 
     height: 90px;
+  }
+  .linkJoinUs{
+    font-size: 30px;
   }
 }
 

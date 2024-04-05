@@ -1,4 +1,6 @@
 import logo from './assets/catLogo.png';
+import kat from './assets/katVert.png';
+
 import landingBackground from "./assets/catBackground.png"
 import './App.css';
 import { Timer } from './components/Timer/Timer';
@@ -34,6 +36,7 @@ function App() {
 
         </div>
       </div>
+      <div id='transition'></div>
       <div id="box3">
         <p className='titleBox blackP'>ABOUT</p>
         <p className='subTitleBox blackP'>
@@ -63,28 +66,24 @@ function App() {
       </div>
       <div id="box5">
         <p className='titleBox blackP'>TOKENOMICS</p>
-        <div className='underMiniBox5'>
-          <p>TOKEN ADDRESS</p>
-          <p>0xfEA9DcDc9E23a9068bF557AD5b186675C61d33eA</p>
-        </div>
-        <div id='miniBox5'>
-
-          <div className='underMiniBox5'>
-            <p>
-              TOKEN SUPPLY</p>
-            <p>
-              10,000,000,000
-            </p>
+        <div id='tokenBox'>
+          <div id='tokenBox2'>
+            <div className='tokenP'>
+              <p className='tokenP1'>10M</p>
+              <p className='tokenP2'>TOTAL SUPPLY</p>
+            </div>
+            <div className='tokenP'>
+              <p className='tokenP1'>ZERO</p>
+              <p className='tokenP2'>TAXES</p>
+            </div>
+            <div className='tokenP'>
+              <p className='tokenP1'>100%</p>
+              <p className='tokenP2'>SAFU. LP Locked, CA renounced.</p>
+            </div>
           </div>
-          <div className='underMiniBox5'>
-            <p>
-              TICKER</p>
-            <p>
-              $STINKAT
-            </p>
-          </div>
+<img id='katVert' src={kat}></img>
         </div>
-        <p>No taxes, liquidity locked, contract ownership renounced. It’s that simple.</p>
+        
       </div>
       <div id="box6">
         <p className='titleBox whiteP'>HOW TO BUY</p>
