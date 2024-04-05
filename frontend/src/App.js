@@ -1,5 +1,5 @@
-import logo from './assets/logo.png';
-import landingBackground from "./assets/landingBackground.jpg"
+import logo from './assets/catLogo.png';
+import landingBackground from "./assets/catBackground.png"
 import './App.css';
 import { Timer } from './components/Timer/Timer';
 
