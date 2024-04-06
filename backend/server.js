@@ -14,7 +14,7 @@ const __dirname = path.dirname(__filename);
 /*app.get('/', (req, res) => {
   res.send('HOMESITE')
 })*/
-app.use(express.static("./../frontend/build/"))
+app.use(express.static("/../frontend/build/"))
 
 app.get('/static/:dir/:file', (req, res) => {
   //console.log('GET /static/' + req.params.dir + "/" + req.params.file)

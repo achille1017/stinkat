@@ -1,7 +1,10 @@
 * {
   margin: 0;
+  z-index: 80;
 }
-
+body{
+  overflow-x: hidden;
+}
 a {
   text-decoration: none;
 }
@@ -16,9 +19,10 @@ a {
   src: url('./assets/Rubik/Rubik-VariableFont_wght.ttf');
 }
 
-#App {
+.App {
   display: flex;
   flex-direction: column;
+  gap: 100px;
 }
 
 #topBar {
@@ -43,7 +47,7 @@ a {
 
 .linkNavBar {
   font-family: LemonMilk;
-  font-family: 30px;
+  font-size: 30px;
   font-weight: 700;
 }
 
@@ -71,7 +75,7 @@ a {
   height: 100%;
   left: 0;
   object-fit: cover;
-  position: absolute;
+  position: fixed;
   top: 0;
   width: 100%;
   z-index: -1;
@@ -82,7 +86,6 @@ a {
   flex-direction: column;
   justify-content: space-around;
   padding: 80px 18% 100px 18%;
-  background-color: rgba(0, 0, 0, .6);
   height: calc(100vh - 320px);
 }
 
@@ -114,8 +117,6 @@ a {
 
 #box3 {
 
-  background: rgb(0, 255, 255);
-  background-image: url('./assets/prints.png');
   padding: 0px 18% 100px 18%;
   display: flex;
   flex-direction: column;
@@ -124,19 +125,14 @@ a {
 }
 
 #box4 {
-  background: rgb(0, 255, 255);
-  background: linear-gradient(180deg, rgba(0, 255, 255, 1) 0%, rgba(44, 94, 114, 1) 20%, rgba(44, 94, 114, 1) 80%, rgba(0, 255, 255, 1) 100%);
-  padding: 200px 18% 200px 18%;
+
+  padding: 0px 18% 0px 18%;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 40px;
 }
-#transition{
-  width: 100%;
-  height: 300px;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 255, 255, 1) 100%);
-}
+
 #logoBox4 {
   height: 200px;
 }
@@ -145,14 +141,15 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  width: 100%;
+  width: 64vw;
   align-items: center;
+  background: rgb(0, 255, 255, 0.2);
+  padding: 20px 0px;
+  border-radius: 16px;
 }
 
 #box5 {
-  background: rgb(0, 255, 255);
-  background-image: url('./assets/prints2.png');
-  padding: 150px 18% 100px 18%;
+  padding: 0px 18% 0px 18%;
 
   display: flex;
   flex-direction: column;
@@ -161,9 +158,8 @@ a {
 }
 
 #box6 {
-  background: rgb(0, 255, 255);
-  background: linear-gradient(180deg, rgba(0, 255, 255, 1) 0%, rgba(44, 94, 114, 1) 20%, rgba(44, 94, 114, 1) 80%, rgba(0, 255, 255, 1) 100%);
-  padding: 200px 18% 220px 18%;
+
+  padding: 0px 18% 0px 18%;
 
   display: flex;
   flex-direction: column;
@@ -172,8 +168,7 @@ a {
 }
 
 #box7 {
-  background: rgb(0, 255, 255);
-  background-image: url('./assets/prints.png');
+
   padding: 80px 18% 100px 18%;
 
   display: flex;
@@ -183,17 +178,21 @@ a {
 }
 
 #overlay {
-  position: absolute;
+  position: fixed ;
   top: 0px;
   left: 0px;
   width: 100vw;
-  height: 140px;
+  height: 100vh;
   background-color: rgba(0, 0, 0, .6);
+  z-index: 10;
 }
 
 .titleBox {
   font-size: 80px;
   font-family: LemonMilk;
+  width: 64vw;
+
+  text-align: center;
 }
 
 .subTitleBox {
@@ -202,12 +201,14 @@ a {
   font-family: Rubik;
   padding: 24px;
   border-radius: 16px;
+  width: 64vw;
+
 
 }
 
 .howToBuyP {
   font-size: 30px;
-  background-color: rgb(255, 255, 255, 0.1);
+  background-color: rgba(0, 10, 41, 0.5);
   font-family: Rubik;
   padding: 24px;
   border-radius: 16px;
@@ -221,6 +222,7 @@ a {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  width: 64vw;
 }
 
 .numberHTB {
@@ -267,7 +269,7 @@ a {
   display: flex;
   flex-direction: row;
   gap: 60px;
-  width: 100%;
+  width: 64vw;
   justify-content: center;
 }
 
@@ -278,7 +280,7 @@ a {
   background-color: rgb(255, 255, 255, 0.7);
   padding: 24px;
   border-radius: 16px;
-  width: 25%;
+  width: calc(64vw * 0.25);
   text-align: center;
 }
 
@@ -291,6 +293,10 @@ a {
   flex-direction: row;
   gap: 100px;
   align-items: center;
+  background-color: rgba(0, 10, 41, 0.5);
+  border-radius: 24px;
+  padding: 60px;
+  width: calc(36.45vw - 120px);
 }
 
 #tokenBox2 {
@@ -307,12 +313,20 @@ a {
 .tokenP1 {
   font-size: 80px;
   font-weight: 700;
+  color: white;
 }
 
 .tokenP2 {
   font-size: 16px;
-}
+  color: white;
 
+}
+#hamburger{
+  display: none;
+}
+#menuMobile{
+  display: none;
+}
 @media screen and (max-width: 1500px) {
   .timerP{
     font-size: 10px;
@@ -353,10 +367,7 @@ a {
     padding: 10px 100px;
   }
 
-  #overlay {
 
-    height: 90px;
-  }
   .linkJoinUs{
     font-size: 30px;
   }
@@ -370,4 +381,117 @@ a {
   #text2 {
     font-size: 20px;
   }
+}
+
+@media screen and (max-width: 1080px) {
+  #hamburger{
+    display: unset;
+    background: transparent;
+    border: none;
+    height: 90%;
+  }
+  #hamburgerImg{
+    height: 100%;
+  }
+  .App{
+    overflow-x: hidden;
+  }
+  #topBar{
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    width: calc(100vw - 20px);
+    display: flex;
+    justify-content: space-between;
+  }
+  #linksNavBar{
+    display: none;
+  }
+  #timerDiv{
+    display: none;
+  }
+  #tokenBox{
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+  }
+  #box1{
+    padding: 20px;
+    margin-top: 90px;
+  }#box5{
+    padding: 20px;
+  }#box3{
+    padding: 20px;
+  }#box4{
+    padding: 20px;
+  }#box5{
+    padding: 20px;
+  }
+  #box6{
+    padding: 20px;
+  }
+  #box7{
+    padding: 20px;
+  }
+  .titleBox{
+    font-size: 40px;
+    width: calc(100vw - 40px);
+    text-align: center;
+  }
+  #logoBox4{
+    display: none;
+  }
+  #miniBox4{
+    flex-direction: column;
+  }
+  #joinUsDiv{
+    flex-direction: column;
+    gap: 20px;  }
+  .linkJoinUs{
+    width: calc(100vw - 40px);
+    padding: 24px 0px;
+  }
+  #joinUsDiv{
+    width: 100%;
+  }
+  .subTitleBox{
+    width: calc(100vw - 88px);
+  }
+  #miniBox4{
+    width: calc(100% - 40px);
+    padding: 20px 20px;
+    gap: 20px;
+  }
+  .testMiniBox4{
+    width: calc(100vw - 120px);
+  }
+  #tokenBox{
+    padding: 30px 10px;
+  }
+  .lineHowToBuy{
+    width: calc(100vw - 40px);
+  }
+  .howToBuyP{
+    font-size: 14px;
+    width: 77%;
+  }
+  #menuMobile{
+    background-color: rgb(0, 0, 0, 0.8);
+    position: fixed;
+    top: 90px;
+    flex-direction: column;
+    width: 100vw;
+    height: calc(100vh - 70px);
+    align-items: center;
+    gap: 30px;
+    padding-top: 30px;
+  }
+  .closed{
+    display: none;
+  }
+  .open{
+    display: flex !important;
+
+  }
+
 }
