@@ -1,22 +1,4 @@
-/**
- *Submitted for verification at basescan.org on 2024-03-13
-*/
-
-/**
- *Submitted for verification at basescan.org on 2024-03-11
-*/
-
 // SPDX-License-Identifier: MIT
-
-// Bratt is the son of Brett who desires to follow his dad's footsteps in conquering the charts of the Base Network. 
-// Bratt, just like his dad, is a character oozing with so much personality. 
-// He is naughty, mischievous and sometimes crazy and wild, but his heart is always in the right place.
-
-// Join Bratt as we traverse the journey towards a milly, starting today!
-
-// Website: https://basedbratt.xyz
-// TG: https://t.me/sonofbrett
-// Twitter: https://x.com/brattsonofbrett
 
 pragma solidity ^0.8.0;
 
@@ -385,10 +367,10 @@ pragma solidity ^0.8.0;
 
 
 
-contract BSHIB is ERC20, ERC20Burnable, Ownable {
+contract Stinkat is ERC20, ERC20Burnable, Ownable {
     uint256 private constant INITIAL_SUPPLY = 10000000000 * 10**18;
 
-    constructor() ERC20("Based Shiba Inu", "BSHIB") {
+    constructor() ERC20("Stinkat", "STINKAT") {
         _mint(msg.sender, INITIAL_SUPPLY);
     }
 

@@ -2,13 +2,39 @@ import logo from './assets/catLogo.png';
 import kat from './assets/katVert.png';
 import landingBackground from "./assets/catBackground.png"
 import hamburger from "./assets/hamburgerWhite.png"
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import './App.css';
 import { Timer } from './components/Timer/Timer';
 import RevealOnScroll from './components/RevealOnScroll/RevealOnScroll';
+//import Web3 from "web3";
+import PieChart from './components/PieChart/PieChart';
+
+//import { EthereumProvider } from '@walletconnect/ethereum-provider'
+
+const DEFAULT_ETH_JSONRPC_URL = "https://bsc-testnet.blockpi.network/v1/rpc/public"
 
 function App() {
   const [menuMobile, setMenuMobile] = useState("closed")
+  //const [web3, setWeb3] = useState(new Web3(DEFAULT_ETH_JSONRPC_URL))
+  const [defaultAccount, setDefaultAccount] = useState()
+
+  /*useEffect(() => {
+    let walletType = localStorage.getItem("walletType")
+    if (walletType === "Metamask") {
+      if (web3.givenProvider) {
+        web3.setProvider(Web3.givenProvider)
+      }
+    }
+    else {
+      web3.setProvider(DEFAULT_ETH_JSONRPC_URL)
+    }
+    let getAccounts = async () => {
+      const accounts = await web3.eth.getAccounts();
+      if (accounts[0] !== undefined) {
+        setDefaultAccount(accounts[0]);
+      }
+    }
+  }, [])*/
   function toggleMenuMobile() {
     console.log(menuMobile)
     if (menuMobile === "closed") {
@@ -25,8 +51,8 @@ function App() {
       <div id="topBar">
         <img id="logoTopBar" src={logo}></img>
         <div id='linksNavBar'>
-          <a className='linkNavBar' href='#box3'>ABOUT</a>
-          <a className='linkNavBar' href='#box5'>TOKENOMICS</a>
+          <a className='linkNavBar' href='#about'>ABOUT</a>
+          <a className='linkNavBar' href='#tokenomics'>TOKENOMICS</a>
           <a className='linkNavBar' href='https://twitter.com/stinkatbase'>TWITTER</a>
           <a className='linkNavBar'>TELEGRAM</a>
         </div>
@@ -37,10 +63,10 @@ function App() {
         <button id='hamburger' onClick={toggleMenuMobile}><img id='hamburgerImg' src={hamburger}></img></button>
       </div>
       <div id="box1">
-        <p id="text1" className='LemonMilk'>$TINKAT</p>
+        <p id="text1" className='LemonMilk'>$STINKAT</p>
         <p id="text2">
-          Get ready for a paw-some adventure with Based Shiba, the newest sensation on the BASE blockchain! Embracing the spirit of memes and good vibes, Based Shiba is not just a token; it’s a community-driven movement that’s here to shake things up in the crypto world.
-        </p>
+          Get ready for a journey unlike any other in the crypto universe. Fueled by madness and
+          thriving on human absurdity, this ecosystem is born to flourish in our modern age.        </p>
         <div id="box2">
           {/*<div id="miniBox2">
             <a>CHART</a>
@@ -49,90 +75,99 @@ function App() {
 
           <a>Buy $STINKAT on UNISWAP</a>*/}
           <Timer deadline="2024-04-15"></Timer>
-
+          <p id='until'>Until the $STINKAT PreSale</p>
         </div>
       </div>
-      <RevealOnScroll sens="left">
+      <RevealOnScroll>
+
+<div id="box6">
+  <p className='titleBox whiteP'>ROADMAP</p>
+  <div className='lineHowToBuy'>
+    <p className='numberHTB'>10/04</p>
+    <p className='howToBuyP'>PRESALE : 4400000 tokens availables for 24 hours. 660 $STINKAT for 0.0003 ETH. Maximum 198000 tokens per wallet. Tokens not sold will be burnt.</p>
+  </div>
+  <div className='lineHowToBuy'>
+    <p className='numberHTB'>13/04</p>
+    <p className='howToBuyP'>PUBLIC SALE : 100 % of the presale funds are for liquidity. The same amount of token bought during the presale will be availables.</p>
+  </div>
+
+  <div className='lineHowToBuy'>
+    <p className='numberHTB'>01/05</p>
+    <p className='howToBuyP' id='about'>$STINKAT pass $BRETT as the top memecoin of BASE.</p>
+  </div>
+</div>
+</RevealOnScroll>
+<RevealOnScroll sens="left" >
+
+<div id="tokenomics">
+  <p className='titleBox whiteP'>TOKENOMICS</p>
+  <div id='tokenBox'>
+    <div id='tokenBox2'>
+      <div className='tokenP'>
+        <p className='tokenP1'>10M</p>
+        <p className='tokenP2'>TOTAL SUPPLY</p>
+      </div>
+      <div className='tokenP'>
+        <p className='tokenP1'>ZERO</p>
+        <p className='tokenP2'>TAXES</p>
+      </div>
+      <div className='tokenP'>
+        <p className='tokenP1'>100%</p>
+        <p className='tokenP2'>SAFU. LP Locked, CA renounced.</p>
+      </div>
+    </div>
+    <img id='katVert' src={kat}></img>
+    <PieChart></PieChart>
+
+  </div>
+
+</div>
+</RevealOnScroll>
+      <RevealOnScroll >
         <div id="box3">
           <p className='titleBox whiteP'>ABOUT</p>
           <p className='subTitleBox whiteP'>
 
-            At Based Shiba, we believe in bringing joy and excitement to the BASE network. Our mission is to create a vibrant and inclusive community where members can unleash their creativity, share positive vibes, and ride the crypto wave together.
-
-            Ready to embark on a thrilling adventure with Based Shiba? Join our community on social media, participate in events, and become part of the BASE Network revolution!
+            This isn't just another cryptocurrency – this is a statement. It's being part of something bigger than
+            yourself. Being part of a movement that defies logic and embraces the unpredictable. $TINKAT is an
+            expression of the unstoppable human spirit to adapt and thrive even in the harshest circumstances.
           </p>
         </div>
       </RevealOnScroll>
-      <RevealOnScroll>
+  
+      <RevealOnScroll sens="left">
 
         <div id="box4">
           <p className='titleBox whiteP'>WHY STINKAT ?</p>
-          <p className='subTitleBox whiteP'>
+          {/*<p className='subTitleBox whiteP'>
 
             Based Shiba isn’t just another token; it’s a movement that celebrates the joy of decentralized finance.
-          </p>
+        </p>*/}
           <div id="miniBox4">
             <p className='testMiniBox4'>
 
-              Community-Driven: We’re not just building a token; we’re fostering a community. Join Based Shiba’s pack and be part of a lively group of crypto enthusiasts who appreciate the lighter side of blockchain technology.
-            </p>
+              It's a movement that adopts a different way of thinking about investing, building a strong
+              community that expresses itself through digital currency. $Tinkat represents a shift towards
+              welcoming the unexpected and the wild side of crypto. It's not about the money – it's about
+              sending a message.            </p>
             <img id="logoBox4" src={logo}></img>
             <p className='testMiniBox4'>
 
-              BASE Blockchain Vibes: Based Shiba is proudly calling BASE Network its home. We’re here to add a splash of color to the blockchain scene and create memorable experiences for our community.
-            </p>
+              The Base Chain's ecosystem is rapidly evolving, witnessing the development of numerous
+              projects and applications. This dynamic expansion provides a solid foundation for Stinkat's
+              success, enabling the builders to tap into the resources and expertise of other projects. As the
+              Base Chain continues to grow, Stinkat's potential grows as well.            </p>
           </div>
         </div>
       </RevealOnScroll>
-      <RevealOnScroll sens="left">
+      
 
-        <div id="box5">
-          <p className='titleBox whiteP'>TOKENOMICS</p>
-          <div id='tokenBox'>
-            <div id='tokenBox2'>
-              <div className='tokenP'>
-                <p className='tokenP1'>10M</p>
-                <p className='tokenP2'>TOTAL SUPPLY</p>
-              </div>
-              <div className='tokenP'>
-                <p className='tokenP1'>ZERO</p>
-                <p className='tokenP2'>TAXES</p>
-              </div>
-              <div className='tokenP'>
-                <p className='tokenP1'>100%</p>
-                <p className='tokenP2'>SAFU. LP Locked, CA renounced.</p>
-              </div>
-            </div>
-            <img id='katVert' src={kat}></img>
-          </div>
-
-        </div>
-      </RevealOnScroll>
       <RevealOnScroll>
-
-        <div id="box6">
-          <p className='titleBox whiteP'>HOW TO BUY</p>
-          <div className='lineHowToBuy'>
-            <p className='numberHTB'>1</p>
-            <p className='howToBuyP'>Buy ETH from your favorited CEX such as Binance or coinbase.  Bridge your eth from ethereum to base using Orbiter.finance .</p>
-          </div>
-          <div className='lineHowToBuy'>
-            <p className='numberHTB'>2</p>
-            <p className='howToBuyP'>Connect Your wallet to Uniswap.  Make Sure you're using the Base Network.  Paste our official CA.</p>
-          </div>
-
-          <div className='lineHowToBuy'>
-            <p className='numberHTB'>3</p>
-            <p className='howToBuyP'>Buy $BRATT.  Do Not Jeet.  Take out your initials if you have to.  Most importantly, HOLD until we reach the millions.</p>
-          </div>
-        </div>
-      </RevealOnScroll>
-      <RevealOnScroll sens="left">
 
         <div id="box7">
           <p className='titleBox whiteP'>JOIN US NOW</p>
           <div id='joinUsDiv'>
-            <a className='linkJoinUs'>TWITTER</a>
+            <a className='linkJoinUs' href='https://twitter.com/stinkatbase'>TWITTER</a>
             <a className='linkJoinUs'>TELEGRAM</a>
           </div>
         </div>

@@ -2,9 +2,11 @@
   margin: 0;
   z-index: 80;
 }
-body{
+
+body {
   overflow-x: hidden;
 }
+
 a {
   text-decoration: none;
 }
@@ -63,12 +65,34 @@ a {
 #topBar a {
   color: white;
 }
-
+.Timer {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+.timerBox{
+  display: flex;
+  flex-direction: row;
+}
+.timerP{
+  color: rgb(255, 255, 255);
+}
 #timerDiv {
   display: flex;
   flex-direction: column;
   gap: 6px;
   align-items: flex-end;
+}
+
+canvas {
+  height: 100% !important;
+  width: 100% !important;
+
+}
+
+#chart {
+  height: 350px;
+  width: 350px;
 }
 
 #landingBackground {
@@ -85,8 +109,14 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  padding: 80px 18% 100px 18%;
+  padding: 0px 18% 100px 18%;
   height: calc(100vh - 320px);
+  text-shadow: 0 0 6px rgba(202, 228, 225, .92), 0 0 30px rgba(202, 228, 225, .34), 0 0 12px rgba(30, 132, 242, .52), 0 0 21px rgba(30, 132, 242, .92), 0 0 34px rgba(30, 132, 242, .78), 0 0 54px rgba(30, 132, 242, .92);
+}
+
+#timerDiv {
+  text-shadow: 0 0 6px rgba(202, 228, 225, .92), 0 0 30px rgba(202, 228, 225, .34), 0 0 12px rgba(30, 132, 242, .52), 0 0 21px rgba(30, 132, 242, .92), 0 0 34px rgba(30, 132, 242, .78), 0 0 54px rgba(30, 132, 242, .92);
+
 }
 
 #text1 {
@@ -98,14 +128,18 @@ a {
 
 #text2 {
   color: white;
-  font-size: 40px;
+  font-size: 30px;
   text-align: center;
+  text-shadow: none;
 }
 
 #box2 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-size: 40px;
+  color: white;
+  gap: 10px;
 }
 
 #miniBox2 {
@@ -148,8 +182,8 @@ a {
   border-radius: 16px;
 }
 
-#box5 {
-  padding: 0px 18% 0px 18%;
+#tokenomics {
+  padding: 150px 18% 0px 18%;
 
   display: flex;
   flex-direction: column;
@@ -178,7 +212,7 @@ a {
 }
 
 #overlay {
-  position: fixed ;
+  position: fixed;
   top: 0px;
   left: 0px;
   width: 100vw;
@@ -213,7 +247,7 @@ a {
   padding: 24px;
   border-radius: 16px;
   color: white;
-  width: 85%;
+  width: 75%;
   text-align: justify;
 }
 
@@ -223,6 +257,7 @@ a {
   justify-content: space-between;
   align-items: center;
   width: 64vw;
+  gap: 30px;
 }
 
 .numberHTB {
@@ -276,7 +311,7 @@ a {
 .linkJoinUs {
   font-size: 50px;
   font-family: LemonMilk;
-  color: rgb(0, 68, 255);
+  color: rgb(26, 43, 89);
   background-color: rgb(255, 255, 255, 0.7);
   padding: 24px;
   border-radius: 16px;
@@ -296,7 +331,6 @@ a {
   background-color: rgba(0, 10, 41, 0.5);
   border-radius: 24px;
   padding: 60px;
-  width: calc(36.45vw - 120px);
 }
 
 #tokenBox2 {
@@ -321,26 +355,33 @@ a {
   color: white;
 
 }
-#hamburger{
+
+#hamburger {
   display: none;
 }
-#menuMobile{
+
+#menuMobile {
   display: none;
 }
+
 @media screen and (max-width: 1500px) {
-  .timerP{
+  .timerP {
     font-size: 10px;
   }
+
   .subTitleBox {
     font-size: 20px;
   }
+
   .howToBuyP {
     font-size: 20px;
     padding: 10px;
   }
-  .numberHTB{
+
+  .numberHTB {
     font-size: 60px;
   }
+
   .testMiniBox4 {
     font-size: 16px;
   }
@@ -368,7 +409,7 @@ a {
   }
 
 
-  .linkJoinUs{
+  .linkJoinUs {
     font-size: 30px;
   }
 }
@@ -384,19 +425,22 @@ a {
 }
 
 @media screen and (max-width: 1080px) {
-  #hamburger{
+  #hamburger {
     display: unset;
     background: transparent;
     border: none;
     height: 90%;
   }
-  #hamburgerImg{
+
+  #hamburgerImg {
     height: 100%;
   }
-  .App{
+
+  .App {
     overflow-x: hidden;
   }
-  #topBar{
+
+  #topBar {
     padding: 10px;
     position: fixed;
     top: 0;
@@ -404,78 +448,102 @@ a {
     display: flex;
     justify-content: space-between;
   }
-  #linksNavBar{
+
+  #linksNavBar {
     display: none;
   }
-  #timerDiv{
+
+  #timerDiv {
     display: none;
   }
-  #tokenBox{
+
+  #tokenBox {
     flex-direction: column;
     width: 100%;
     padding: 10px;
   }
-  #box1{
+
+  #box1 {
     padding: 20px;
     margin-top: 90px;
-  }#box5{
-    padding: 20px;
-  }#box3{
-    padding: 20px;
-  }#box4{
-    padding: 20px;
-  }#box5{
+  }
+
+  #tokenomics {
     padding: 20px;
   }
-  #box6{
+
+  #box3 {
     padding: 20px;
   }
-  #box7{
+
+  #box4 {
     padding: 20px;
   }
-  .titleBox{
+
+  #box6 {
+    padding: 20px;
+  }
+
+  #box7 {
+    padding: 20px;
+  }
+
+  .titleBox {
     font-size: 40px;
     width: calc(100vw - 40px);
     text-align: center;
   }
-  #logoBox4{
+
+  #logoBox4 {
     display: none;
   }
-  #miniBox4{
+
+  #miniBox4 {
     flex-direction: column;
   }
-  #joinUsDiv{
+
+  #joinUsDiv {
     flex-direction: column;
-    gap: 20px;  }
-  .linkJoinUs{
+    gap: 20px;
+  }
+
+  .linkJoinUs {
     width: calc(100vw - 40px);
     padding: 24px 0px;
   }
-  #joinUsDiv{
+
+  #joinUsDiv {
     width: 100%;
   }
-  .subTitleBox{
+
+  .subTitleBox {
     width: calc(100vw - 88px);
   }
-  #miniBox4{
+
+  #miniBox4 {
     width: calc(100% - 40px);
     padding: 20px 20px;
     gap: 20px;
   }
-  .testMiniBox4{
+
+  .testMiniBox4 {
     width: calc(100vw - 120px);
   }
-  #tokenBox{
+
+  #tokenBox {
     padding: 30px 10px;
   }
-  .lineHowToBuy{
+
+  .lineHowToBuy {
     width: calc(100vw - 40px);
   }
-  .howToBuyP{
+
+  .howToBuyP {
     font-size: 14px;
     width: 77%;
   }
-  #menuMobile{
+
+  #menuMobile {
     background-color: rgb(0, 0, 0, 0.8);
     position: fixed;
     top: 90px;
@@ -483,15 +551,36 @@ a {
     width: 100vw;
     height: calc(100vh - 70px);
     align-items: center;
-    gap: 30px;
+    gap: 60px;
     padding-top: 30px;
   }
-  .closed{
+
+  .closed {
     display: none;
   }
-  .open{
+
+  .open {
     display: flex !important;
 
   }
-
+  #until{
+    text-align: center;
+  }
+  .timerP{
+    font-size: 20px;
+  }
+  .numberHTB{
+    font-size: 20px;
+  }
+  .timerBox{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .lineTimerBox{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-between;
+  }
 }
