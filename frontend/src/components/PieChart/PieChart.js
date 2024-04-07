@@ -47,7 +47,7 @@ const options = {
     datalabels: {
       color: '#fff',
       font: {
-        size: 16,
+        size: 26,
         family: "Rubik"
       },
       formatter: function (value, context) {

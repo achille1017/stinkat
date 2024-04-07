@@ -43,16 +43,17 @@ function App() {
       </div>
       <div id="box1">
         <p id="text1" className='LemonMilk'>STINKAT</p>
-        <p id="text2">
-          Get ready for a journey unlike any other in the crypto universe. Fueled by madness and
-          thriving on human absurdity, this ecosystem is born to flourish in our modern age.        </p>
         <div id="box2">
 
           <Timer deadline="2024-04-11 14:0:0 GMT"></Timer>
           <p id='until'>Until the $STINKAT PreSale</p>
         </div>
+        <p id="text2">
+          Get ready for a journey unlike any other in the crypto universe. Fueled by madness and
+          thriving on human absurdity, this ecosystem is born to flourish in our modern age.        </p>
+
       </div>
-      {/*<RevealOnScroll sens="left">
+      {/*<RevealOnScroll>
         <PreSale></PreSale>
   </RevealOnScroll>*/}
       <RevealOnScroll>
@@ -65,12 +66,12 @@ function App() {
           </div>
           <div className='lineHowToBuy'>
             <p className='numberHTB'>14/04</p>
-            <p className='howToBuyP'>PUBLIC SALE AT 14:00 GMT : 100 % of the presale funds are for liquidity. The same amount of token bought during the presale will be availables.</p>
+            <p className='howToBuyP'>PUBLIC SALE AT 14:00 GMT : 100 % of the presale funds are for liquidity. The same amount of tokens bought during the presale will be availables.</p>
           </div>
 
           <div className='lineHowToBuy'>
             <p className='numberHTB'>01/05</p>
-            <p className='howToBuyP' id="tokenomics">$STINKAT pass $BRETT as the top memecoin of BASE.</p>
+            <p className='howToBuyP' id="tokenomics">$STINKAT pass $BRETT as the top memecoin on BASE.</p>
           </div>
         </div>
       </RevealOnScroll>
@@ -101,17 +102,6 @@ function App() {
         </div>
       </RevealOnScroll>
       <div id='about'></div>
-      <RevealOnScroll >
-        <div id="box3">
-          <p className='titleBox whiteP'>ABOUT</p>
-          <p className='subTitleBox whiteP'>
-
-            This isn't just another cryptocurrency – this is a statement. It's being part of something bigger than
-            yourself. Being part of a movement that defies logic and embraces the unpredictable. $TINKAT is an
-            expression of the unstoppable human spirit to adapt and thrive even in the harshest circumstances.
-          </p>
-        </div>
-      </RevealOnScroll>
 
       <RevealOnScroll>
 

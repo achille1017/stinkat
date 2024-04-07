@@ -14,35 +14,27 @@ const PreSale = (props) => {
     const [defaultAccount, setDefaultAccount] = useState()
     const [modalState, setModalState] = useState("closed")
     const [walletModalState, setWalletModalState] = useState("closed")
-    const [overlayClass, setOverlayClass] = useState("inactiveOverlay")
 
-    function switchOverlayMode() {
-        overlayClass === "inactiveOverlay" ? setOverlayClass("overlayActive") : setOverlayClass("inactiveOverlay")
-    }
-    function closeOverlay() {
-        setOverlayClass("inactiveOverlay")
-    }
+
     function openModal() {
         setModalState("open")
-        switchOverlayMode()
         document.body.style.overflow = 'hidden';
-      }
-      function closeModal() {
+    }
+    function closeModal() {
         closeWalletModal()
         setModalState("closed")
-        closeOverlay()
         document.body.style.overflow = '';
-      }
-      function switchWalletModal() {
+    }
+    function switchWalletModal() {
         if (walletModalState === 'closed') {
-          setWalletModalState("open")
+            setWalletModalState("open")
         } else {
-          setWalletModalState("closed")
+            setWalletModalState("closed")
         }
-      }
-      function closeWalletModal() {
+    }
+    function closeWalletModal() {
         setWalletModalState("closed")
-      }
+    }
     useEffect(() => {
         let walletType = localStorage.getItem("walletType")
         if (walletType === "Metamask") {
@@ -63,27 +55,18 @@ const PreSale = (props) => {
     return (
         <div id="presale">
             <p className="whiteP titleBox">PRESALE</p>
-            {modalState === "closed" ?
-                <button className='generalsButton' onClick={openModal} id='connectYourWalletButton'><p className="buttonP" >Connect Your Wallet</p></button> : <div>
-                    <ClickAwayListener onClickAway={closeModal} touchEvent={false}>
 
-                        <div id="connecterDiv">
+            <div id="connecterDiv">
 
-                            <p id="chooseYourProvider">Connect your wallet</p>
+                <p id="chooseYourProvider">Connect your wallet</p>
 
-                            <div id="line2Modal">
+                <div id="line2Modal">
 
-                                <ConnectWc web3={web3} ></ConnectWc>
-                                <ConnectMetamask web3={web3}  ></ConnectMetamask>
-                            </div>
-                            <button id="closeConnecter" onClick={closeModal}><img id='closeImage' src={closeImage}></img></button>
-
-                        </div>
-                    </ClickAwayListener>
-                    <div id="overlay" className={overlayClass}></div>
-
+                    <ConnectWc web3={web3} ></ConnectWc>
+                    <ConnectMetamask web3={web3}  ></ConnectMetamask>
                 </div>
-            }
+
+            </div>
         </div>
     )
 }

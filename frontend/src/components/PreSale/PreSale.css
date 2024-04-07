@@ -1,0 +1,14 @@
+#connecterDiv{
+    display: flex;
+    flex-direction: column;
+    z-index: 100;
+    background-color: blue;
+    padding: 30px;
+    border-radius: 24px;
+}
+.walletsImage{
+    height: 60px;
+}
+#closeImage{
+    height: 60px;
+}
