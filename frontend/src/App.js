@@ -80,49 +80,50 @@ function App() {
       </div>
       <RevealOnScroll>
 
-<div id="box6">
-  <p className='titleBox whiteP'>ROADMAP</p>
-  <div className='lineHowToBuy'>
-    <p className='numberHTB'>10/04</p>
-    <p className='howToBuyP'>PRESALE : 4400000 tokens availables for 24 hours. 660 $STINKAT for 0.0003 ETH. Maximum 198000 tokens per wallet. Tokens not sold will be burnt.</p>
-  </div>
-  <div className='lineHowToBuy'>
-    <p className='numberHTB'>13/04</p>
-    <p className='howToBuyP'>PUBLIC SALE : 100 % of the presale funds are for liquidity. The same amount of token bought during the presale will be availables.</p>
-  </div>
+        <div id="box6">
+          <p className='titleBox whiteP'>ROADMAP</p>
+          <div className='lineHowToBuy'>
+            <p className='numberHTB'>10/04</p>
+            <p className='howToBuyP'>PRESALE : 4400000 tokens availables for 24 hours. 660 $STINKAT for 0.0003 ETH. Maximum 198000 tokens per wallet. Tokens not sold will be burnt.</p>
+          </div>
+          <div className='lineHowToBuy'>
+            <p className='numberHTB'>13/04</p>
+            <p className='howToBuyP'>PUBLIC SALE : 100 % of the presale funds are for liquidity. The same amount of token bought during the presale will be availables.</p>
+          </div>
 
-  <div className='lineHowToBuy'>
-    <p className='numberHTB'>01/05</p>
-    <p className='howToBuyP' id='about'>$STINKAT pass $BRETT as the top memecoin of BASE.</p>
-  </div>
-</div>
-</RevealOnScroll>
-<RevealOnScroll sens="left" >
+          <div className='lineHowToBuy'>
+            <p className='numberHTB'>01/05</p>
+            <p className='howToBuyP' id="tokenomics">$STINKAT pass $BRETT as the top memecoin of BASE.</p>
+          </div>
+        </div>
+      </RevealOnScroll>
+      <RevealOnScroll sens="left" >
 
-<div id="tokenomics">
-  <p className='titleBox whiteP'>TOKENOMICS</p>
-  <div id='tokenBox'>
-    <div id='tokenBox2'>
-      <div className='tokenP'>
-        <p className='tokenP1'>10M</p>
-        <p className='tokenP2'>TOTAL SUPPLY</p>
-      </div>
-      <div className='tokenP'>
-        <p className='tokenP1'>ZERO</p>
-        <p className='tokenP2'>TAXES</p>
-      </div>
-      <div className='tokenP'>
-        <p className='tokenP1'>100%</p>
-        <p className='tokenP2'>SAFU. LP Locked, CA renounced.</p>
-      </div>
-    </div>
-    <img id='katVert' src={kat}></img>
-    <PieChart></PieChart>
+        <div id="tokenomics2">
+          <p className='titleBox whiteP'>TOKENOMICS</p>
+          <div id='tokenBox'>
+            <div id='tokenBox2'>
+              <div className='tokenP'>
+                <p className='tokenP1'>10M</p>
+                <p className='tokenP2'>TOTAL SUPPLY</p>
+              </div>
+              <div className='tokenP'>
+                <p className='tokenP1'>ZERO</p>
+                <p className='tokenP2'>TAXES</p>
+              </div>
+              <div className='tokenP'>
+                <p className='tokenP1'>100%</p>
+                <p className='tokenP2'>SAFU. LP Locked, CA renounced.</p>
+              </div>
+            </div>
+            <img id='katVert' src={kat}></img>
+            <PieChart></PieChart>
 
-  </div>
+          </div>
 
-</div>
-</RevealOnScroll>
+        </div>
+      </RevealOnScroll>
+      <div id='about'></div>
       <RevealOnScroll >
         <div id="box3">
           <p className='titleBox whiteP'>ABOUT</p>
@@ -134,7 +135,7 @@ function App() {
           </p>
         </div>
       </RevealOnScroll>
-  
+
       <RevealOnScroll sens="left">
 
         <div id="box4">
@@ -160,7 +161,7 @@ function App() {
           </div>
         </div>
       </RevealOnScroll>
-      
+
 
       <RevealOnScroll>
 
@@ -175,8 +176,8 @@ function App() {
       <img src={landingBackground} id="landingBackground"></img>
       <div id="overlay"></div>
       <div id='menuMobile' className={menuMobile}>
-        <a className='linkNavBar whiteP' href='#box3' onClick={toggleMenuMobile}>ABOUT</a>
-        <a className='linkNavBar whiteP' href='#box5' onClick={toggleMenuMobile}>TOKENOMICS</a>
+        <a className='linkNavBar whiteP' href='#about' onClick={toggleMenuMobile}>ABOUT</a>
+        <a className='linkNavBar whiteP' href='#tokenomics' onClick={toggleMenuMobile}>TOKENOMICS</a>
         <a className='linkNavBar whiteP' href='https://twitter.com/stinkatbase'>TWITTER</a>
         <a className='linkNavBar whiteP'>TELEGRAM</a>
       </div>

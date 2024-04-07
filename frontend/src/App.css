@@ -27,6 +27,11 @@ a {
   gap: 100px;
 }
 
+#about {
+  position: relative;
+  bottom: 100px;
+}
+
 #topBar {
   position: sticky;
   top: 0px;
@@ -65,18 +70,22 @@ a {
 #topBar a {
   color: white;
 }
+
 .Timer {
   display: flex;
   flex-direction: row;
   gap: 8px;
 }
-.timerBox{
+
+.timerBox {
   display: flex;
   flex-direction: row;
 }
-.timerP{
+
+.timerP {
   color: rgb(255, 255, 255);
 }
+
 #timerDiv {
   display: flex;
   flex-direction: column;
@@ -182,7 +191,7 @@ canvas {
   border-radius: 16px;
 }
 
-#tokenomics {
+#tokenomics2 {
   padding: 150px 18% 0px 18%;
 
   display: flex;
@@ -468,7 +477,7 @@ canvas {
     margin-top: 90px;
   }
 
-  #tokenomics {
+  #tokenomics2 {
     padding: 20px;
   }
 
@@ -563,24 +572,33 @@ canvas {
     display: flex !important;
 
   }
-  #until{
+
+  #until {
     text-align: center;
   }
-  .timerP{
+
+  .timerP {
     font-size: 20px;
   }
-  .numberHTB{
+
+  .numberHTB {
     font-size: 20px;
   }
-  .timerBox{
+
+  .timerBox {
     display: flex;
     flex-direction: column;
     gap: 10px;
   }
-  .lineTimerBox{
+
+  .lineTimerBox {
     display: flex;
     flex-direction: row;
     gap: 20px;
     justify-content: space-between;
+  }
+
+  #box2 {
+    gap: 30px;
   }
 }
