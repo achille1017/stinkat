@@ -6,35 +6,14 @@ import { useEffect, useState } from 'react';
 import './App.css';
 import { Timer } from './components/Timer/Timer';
 import RevealOnScroll from './components/RevealOnScroll/RevealOnScroll';
-//import Web3 from "web3";
 import PieChart from './components/PieChart/PieChart';
+import PreSale from './components/PreSale/PreSale';
 
-//import { EthereumProvider } from '@walletconnect/ethereum-provider'
 
-const DEFAULT_ETH_JSONRPC_URL = "https://bsc-testnet.blockpi.network/v1/rpc/public"
 
 function App() {
   const [menuMobile, setMenuMobile] = useState("closed")
-  //const [web3, setWeb3] = useState(new Web3(DEFAULT_ETH_JSONRPC_URL))
-  const [defaultAccount, setDefaultAccount] = useState()
 
-  /*useEffect(() => {
-    let walletType = localStorage.getItem("walletType")
-    if (walletType === "Metamask") {
-      if (web3.givenProvider) {
-        web3.setProvider(Web3.givenProvider)
-      }
-    }
-    else {
-      web3.setProvider(DEFAULT_ETH_JSONRPC_URL)
-    }
-    let getAccounts = async () => {
-      const accounts = await web3.eth.getAccounts();
-      if (accounts[0] !== undefined) {
-        setDefaultAccount(accounts[0]);
-      }
-    }
-  }, [])*/
   function toggleMenuMobile() {
     console.log(menuMobile)
     if (menuMobile === "closed") {
@@ -54,7 +33,7 @@ function App() {
           <a className='linkNavBar' href='#about'>ABOUT</a>
           <a className='linkNavBar' href='#tokenomics2'>TOKENOMICS</a>
           <a className='linkNavBar' href='https://twitter.com/stinkatbase'>TWITTER</a>
-          <a className='linkNavBar'>TELEGRAM</a>
+          <a className='linkNavBar' href='https://t.me/stinkatportal'>TELEGRAM</a>
         </div>
         <div id='timerDiv'>
           <Timer deadline="2024-04-11 14:0:0 GMT"></Timer>
@@ -63,7 +42,7 @@ function App() {
         <button id='hamburger' onClick={toggleMenuMobile}><img id='hamburgerImg' src={hamburger}></img></button>
       </div>
       <div id="box1">
-        <p id="text1" className='LemonMilk'>$STINKAT</p>
+        <p id="text1" className='LemonMilk'>STINKAT</p>
         <p id="text2">
           Get ready for a journey unlike any other in the crypto universe. Fueled by madness and
           thriving on human absurdity, this ecosystem is born to flourish in our modern age.        </p>
@@ -73,6 +52,9 @@ function App() {
           <p id='until'>Until the $STINKAT PreSale</p>
         </div>
       </div>
+      {/*<RevealOnScroll sens="left">
+        <PreSale></PreSale>
+  </RevealOnScroll>*/}
       <RevealOnScroll>
 
         <div id="box6">
@@ -92,7 +74,7 @@ function App() {
           </div>
         </div>
       </RevealOnScroll>
-      <RevealOnScroll sens="left" >
+      <RevealOnScroll  >
 
         <div id="tokenomics2">
           <p className='titleBox whiteP'>TOKENOMICS</p>
@@ -131,14 +113,11 @@ function App() {
         </div>
       </RevealOnScroll>
 
-      <RevealOnScroll sens="left">
+      <RevealOnScroll>
 
         <div id="box4">
           <p className='titleBox whiteP'>WHY STINKAT ?</p>
-          {/*<p className='subTitleBox whiteP'>
 
-            Based Shiba isn’t just another token; it’s a movement that celebrates the joy of decentralized finance.
-        </p>*/}
           <div id="miniBox4">
             <p className='testMiniBox4'>
 
@@ -164,7 +143,7 @@ function App() {
           <p className='titleBox whiteP'>JOIN US NOW</p>
           <div id='joinUsDiv'>
             <a className='linkJoinUs' href='https://twitter.com/stinkatbase'>TWITTER</a>
-            <a className='linkJoinUs'>TELEGRAM</a>
+            <a className='linkJoinUs' href='https://t.me/stinkatportal'>TELEGRAM</a>
           </div>
         </div>
       </RevealOnScroll>
@@ -174,7 +153,7 @@ function App() {
         <a className='linkNavBar whiteP' href='#about' onClick={toggleMenuMobile}>ABOUT</a>
         <a className='linkNavBar whiteP' href='#tokenomics' onClick={toggleMenuMobile}>TOKENOMICS</a>
         <a className='linkNavBar whiteP' href='https://twitter.com/stinkatbase'>TWITTER</a>
-        <a className='linkNavBar whiteP'>TELEGRAM</a>
+        <a className='linkNavBar whiteP' href='https://t.me/stinkatportal'>TELEGRAM</a>
       </div>
     </div>
   );

@@ -1,19 +1,27 @@
 {
   "files": {
-    "main.css": "/static/css/main.185fe66c.css",
-    "main.js": "/static/js/main.00aa45ce.js",
+    "main.css": "/static/css/main.532555b4.css",
+    "main.js": "/static/js/main.1cdf83f4.js",
+    "static/js/171.d986189b.chunk.js": "/static/js/171.d986189b.chunk.js",
+    "static/js/400.c84d54de.chunk.js": "/static/js/400.c84d54de.chunk.js",
     "static/media/catLogo.png": "/static/media/catLogo.e6fc6e6139b2a87887df.png",
     "static/media/katVert.png": "/static/media/katVert.ea7167dd78b07e5a1889.png",
     "static/media/catBackground.png": "/static/media/catBackground.03d94486857d2314eea4.png",
     "static/media/Rubik-VariableFont_wght.ttf": "/static/media/Rubik-VariableFont_wght.3a4acc0356c6ea73f2c3.ttf",
+    "static/media/coinbase.png": "/static/media/coinbase.d690a1fe3c3e67478b4a.png",
     "static/media/LEMONMILK-Regular.otf": "/static/media/LEMONMILK-Regular.55fc24317b9c2b507dd8.otf",
+    "static/media/metamask.png": "/static/media/metamask.00007b1ce1b5ce688d25.png",
     "static/media/hamburgerWhite.png": "/static/media/hamburgerWhite.20f2fa3110a363b5984c.png",
+    "static/media/walletconnect.png": "/static/media/walletconnect.9f823c8845fe5055a070.png",
+    "static/media/close.png": "/static/media/close.76608c97ea3351d43407.png",
     "index.html": "/index.html",
-    "main.185fe66c.css.map": "/static/css/main.185fe66c.css.map",
-    "main.00aa45ce.js.map": "/static/js/main.00aa45ce.js.map"
+    "main.532555b4.css.map": "/static/css/main.532555b4.css.map",
+    "main.1cdf83f4.js.map": "/static/js/main.1cdf83f4.js.map",
+    "171.d986189b.chunk.js.map": "/static/js/171.d986189b.chunk.js.map",
+    "400.c84d54de.chunk.js.map": "/static/js/400.c84d54de.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.185fe66c.css",
-    "static/js/main.00aa45ce.js"
+    "static/css/main.532555b4.css",
+    "static/js/main.1cdf83f4.js"
   ]
 }
