@@ -57,7 +57,7 @@ function App() {
           <a className='linkNavBar'>TELEGRAM</a>
         </div>
         <div id='timerDiv'>
-          <Timer deadline="2024-04-15"></Timer>
+          <Timer deadline="2024-04-11 14:0:0 GMT"></Timer>
           <p className="timerP">before the official launch.</p>
         </div>
         <button id='hamburger' onClick={toggleMenuMobile}><img id='hamburgerImg' src={hamburger}></img></button>
@@ -68,13 +68,8 @@ function App() {
           Get ready for a journey unlike any other in the crypto universe. Fueled by madness and
           thriving on human absurdity, this ecosystem is born to flourish in our modern age.        </p>
         <div id="box2">
-          {/*<div id="miniBox2">
-            <a>CHART</a>
-            <a>JOIN US</a>
-          </div>
 
-          <a>Buy $STINKAT on UNISWAP</a>*/}
-          <Timer deadline="2024-04-15"></Timer>
+          <Timer deadline="2024-04-11 14:0:0 GMT"></Timer>
           <p id='until'>Until the $STINKAT PreSale</p>
         </div>
       </div>
@@ -83,12 +78,12 @@ function App() {
         <div id="box6">
           <p className='titleBox whiteP'>ROADMAP</p>
           <div className='lineHowToBuy'>
-            <p className='numberHTB'>10/04</p>
-            <p className='howToBuyP'>PRESALE : 4400000 tokens availables for 24 hours. 660 $STINKAT for 0.0003 ETH. Maximum 198000 tokens per wallet. Tokens not sold will be burnt.</p>
+            <p className='numberHTB'>11/04</p>
+            <p className='howToBuyP'> PRESALE AT 14:00 GMT : 4400000 tokens availables for 24 hours. 660 $STINKAT for 0.0003 ETH. Maximum 198000 tokens per wallet. Tokens not sold will be burnt.</p>
           </div>
           <div className='lineHowToBuy'>
-            <p className='numberHTB'>13/04</p>
-            <p className='howToBuyP'>PUBLIC SALE : 100 % of the presale funds are for liquidity. The same amount of token bought during the presale will be availables.</p>
+            <p className='numberHTB'>14/04</p>
+            <p className='howToBuyP'>PUBLIC SALE AT 14:00 GMT : 100 % of the presale funds are for liquidity. The same amount of token bought during the presale will be availables.</p>
           </div>
 
           <div className='lineHowToBuy'>
