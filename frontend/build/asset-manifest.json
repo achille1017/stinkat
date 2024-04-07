@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.185fe66c.css",
-    "main.js": "/static/js/main.88477c2f.js",
+    "main.js": "/static/js/main.aa7bb8e8.js",
     "static/media/catLogo.png": "/static/media/catLogo.e6fc6e6139b2a87887df.png",
     "static/media/katVert.png": "/static/media/katVert.ea7167dd78b07e5a1889.png",
     "static/media/catBackground.png": "/static/media/catBackground.03d94486857d2314eea4.png",
@@ -10,10 +10,10 @@
     "static/media/hamburgerWhite.png": "/static/media/hamburgerWhite.20f2fa3110a363b5984c.png",
     "index.html": "/index.html",
     "main.185fe66c.css.map": "/static/css/main.185fe66c.css.map",
-    "main.88477c2f.js.map": "/static/js/main.88477c2f.js.map"
+    "main.aa7bb8e8.js.map": "/static/js/main.aa7bb8e8.js.map"
   },
   "entrypoints": [
     "static/css/main.185fe66c.css",
-    "static/js/main.88477c2f.js"
+    "static/js/main.aa7bb8e8.js"
   ]
 }

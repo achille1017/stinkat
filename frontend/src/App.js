@@ -52,7 +52,7 @@ function App() {
         <img id="logoTopBar" src={logo}></img>
         <div id='linksNavBar'>
           <a className='linkNavBar' href='#about'>ABOUT</a>
-          <a className='linkNavBar' href='#tokenomics'>TOKENOMICS</a>
+          <a className='linkNavBar' href='#tokenomics2'>TOKENOMICS</a>
           <a className='linkNavBar' href='https://twitter.com/stinkatbase'>TWITTER</a>
           <a className='linkNavBar'>TELEGRAM</a>
         </div>
