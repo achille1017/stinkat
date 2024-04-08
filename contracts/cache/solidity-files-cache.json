@@ -50,8 +50,8 @@
       ]
     },
     "/home/achille/prog/stinkat/contracts/contracts/Presale.sol": {
-      "lastModificationDate": 1712434293603,
-      "contentHash": "05bbdc43eb3436935517824de0d90056",
+      "lastModificationDate": 1712520262245,
+      "contentHash": "2d87a28060110b2c40eea0adfb3ad8e0",
       "sourceName": "contracts/Presale.sol",
       "solcConfig": {
         "version": "0.8.24",

@@ -8,7 +8,7 @@ import { Timer } from './components/Timer/Timer';
 import RevealOnScroll from './components/RevealOnScroll/RevealOnScroll';
 import PieChart from './components/PieChart/PieChart';
 import PreSale from './components/PreSale/PreSale';
-
+import cadenas from './assets/cadenas.png'
 
 
 function App() {
@@ -43,35 +43,39 @@ function App() {
       </div>
       <div id="box1">
         <p id="text1" className='LemonMilk'>STINKAT</p>
+        <p id="text2">
+          You smell that ? It's STINKAT !  </p>
         <div id="box2">
 
           <Timer deadline="2024-04-11 14:0:0 GMT"></Timer>
           <p id='until'>Until the $STINKAT PreSale</p>
         </div>
-        <p id="text2">
-          Get ready for a journey unlike any other in the crypto universe. Fueled by madness and
-          thriving on human absurdity, this ecosystem is born to flourish in our modern age.        </p>
+   
 
       </div>
-      {/*<RevealOnScroll>
-        <PreSale></PreSale>
-  </RevealOnScroll>*/}
+      {
+        <div id="presale">
+        <p className="whiteP titleBox">PRESALE</p>
+        <img src={cadenas} id='cadenas'></img>
+        </div>
+        //<PreSale></PreSale>
+      }
       <RevealOnScroll>
 
         <div id="box6">
           <p className='titleBox whiteP'>ROADMAP</p>
           <div className='lineHowToBuy'>
             <p className='numberHTB'>11/04</p>
-            <p className='howToBuyP'> PRESALE AT 14:00 GMT : 4400000 tokens availables for 24 hours. 660 $STINKAT for 0.0003 ETH. Maximum 198000 tokens per wallet. Tokens not sold will be burnt.</p>
+            <p className='howToBuyP'>PRESALE AT 02:00 PM GMT (14:00 GMT) on stinkat.xyz : 4,400,000 tokens available for 24 hours. Get 660 $STINKAT for 0.0003 ETH. Max 198,000 tokens per wallet. Unsold tokens will be burned.</p>
           </div>
           <div className='lineHowToBuy'>
             <p className='numberHTB'>14/04</p>
-            <p className='howToBuyP'>PUBLIC SALE AT 14:00 GMT : 100 % of the presale funds are for liquidity. The same amount of tokens bought during the presale will be availables.</p>
+            <p className='howToBuyP'>PUBLIC SALE BEGINS AT 14:00 GMT! 100% of presale funds allocated to liquidity. The same amout of tokens that were bought during the presale will be available, the rest will be burnt.</p>
           </div>
 
           <div className='lineHowToBuy'>
             <p className='numberHTB'>01/05</p>
-            <p className='howToBuyP' id="tokenomics">$STINKAT pass $BRETT as the top memecoin on BASE.</p>
+            <p className='howToBuyP' id="tokenomics">SPECIAL EVENT : Announcement of a BIG launch. Exclusives rewards for holders.</p>
           </div>
         </div>
       </RevealOnScroll>

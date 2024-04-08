@@ -11,27 +11,21 @@ function ConnectMetamask(props) {
       window.ethereum
         .request({ method: "eth_requestAccounts" })
         .then((result) => {
-          props.web3.setProvider(Web3.givenProvider)
-          props.accountChangedHandler(result[0]);
-          //console.log(result[0])
-          //this.setState({ connButtonText: "Wallet Connected" });
-          //getAccountBalance(result[0]);
+          props.web3.setProvider(window.ethereum)
+          props.setDefaultAccount(result[0]);
           localStorage.setItem("walletType", "Metamask")
-
         })
         .catch((error) => {
-          //setErrorMessage(error.message);
         });
     } else {
       console.log("Need to install MetaMask");
-      //setErrorMessage("Please install MetaMask browser extension to interact");
     }
   };
   return (
-      <button  id="metamaskConnecterDiv" className="buttonTransparent buttonTransparentModal" onClick={connectMetamask}>
-        <img src={metamaskImage} alt="metamaskImage" className='walletsImage'></img>
-        <p>Metamask Web Extension</p>
-      </button>
+    <button id="metamaskConnecterDiv" className="buttonTransparent buttonTransparentModal" onClick={connectMetamask}>
+      <img src={metamaskImage} alt="metamaskImage" className='walletsImage'></img>
+      <p className='walletName'>Metamask Web Extension</p>
+    </button>
   );
 
 }

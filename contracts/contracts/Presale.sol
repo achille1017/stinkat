@@ -16,16 +16,13 @@ contract Presale {
     mapping(address => uint256) public balances;
 
     constructor(
-        address _tokenAddress,
-        uint256 _presalePrice,
-        uint256 _totalPresaleTokens,
-        uint256 _maxTokenPerUser
+        address _tokenAddress
     ) {
         owner = payable(msg.sender);
         token = ISTINKAT(_tokenAddress);
-        presalePrice = _presalePrice;
-        totalPresaleTokensRemaining = _totalPresaleTokens;
-        maxTokenPerUser = _maxTokenPerUser;
+        presalePrice = 2200000;
+        totalPresaleTokensRemaining = 4400000000000000000000000;
+        maxTokenPerUser = 198000000000000000000000;
     }
 
     function buyTokens(uint256 _amount) public payable {
@@ -52,5 +49,8 @@ contract Presale {
     }
     function getTotalPresaleTokensRemaining() public view returns (uint256){
         return totalPresaleTokensRemaining;
+    }
+    function getBalance(address _address) public view returns (uint256){
+        return balances[_address];
     }
 }

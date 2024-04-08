@@ -1,14 +1,53 @@
+#presale {
+    background-color: rgb(255, 255, 255, 0.1);
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px;
+    width: 80vw;
+    margin: auto;
+    gap: 40px;
+  }
 #connecterDiv{
     display: flex;
     flex-direction: column;
-    z-index: 100;
-    background-color: blue;
-    padding: 30px;
-    border-radius: 24px;
+    align-items: center;
+    gap: 30px;
 }
 .walletsImage{
     height: 60px;
 }
 #closeImage{
     height: 60px;
+}
+#chooseYourProvider{
+    font-family: Rubik;
+    font-size: 30px;
+    text-align: center;
+}
+.buttonTransparent{
+    background: rgb(255,255,255,0.3);
+    border: none;
+    width: 300px;
+    padding: 40px 0px;
+    border-radius: 24px;
+}
+#line2Modal{
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+}
+
+.walletName{
+    color: white;
+    font-size: 20px;
+}
+#disconnect{
+    background-color: rgb(26, 43, 89);
+    color: white;
+    padding: 20px;
+    border-radius: 24px;
+    border: none;
+    font-size: 22px;
 }

@@ -19,7 +19,7 @@ function ConnectWc(props) {
       });
       await provider.enable();
       props.web3.setProvider(provider)
-      props.web3.eth.getAccounts().then((res) => { props.accountChangedHandler(res[0]) })
+      props.web3.eth.getAccounts().then((res) => { props.setDefaultAccount(res[0]) })
       localStorage.setItem("walletType", "WC")
     }
     catch (e) {
@@ -29,7 +29,7 @@ function ConnectWc(props) {
   return (
     <button className="buttonTransparent buttonTransparentModal" onClick={connectWalletConnect}>
       <img src={walletconnectImage} alt="walletconnectImage" className='walletsImage'></img>
-      <p>WalletConnect</p>
+      <p className='walletName'>WalletConnect</p>
 
     </button>
   );

@@ -32,6 +32,10 @@ a {
   bottom: 100px;
 }
 
+#tokenomics {
+  text-shadow: 0 0 6px rgba(202, 228, 225, .92), 0 0 30px rgba(202, 228, 225, .34), 0 0 12px rgba(30, 132, 242, .52), 0 0 21px rgba(30, 132, 242, .92), 0 0 34px rgba(30, 132, 242, .78), 0 0 54px rgba(30, 132, 242, .92);
+}
+
 #topBar {
   position: sticky;
   top: 0px;
@@ -373,13 +377,8 @@ canvas {
   display: none;
 }
 
-#presale {
-  background-color: rgb(255, 255, 255, 0.1);
-  border-radius: 24px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 60px;
+#cadenas {
+  height: 300px;
 }
 
 @media screen and (max-width: 1500px) {
@@ -610,11 +609,22 @@ canvas {
   #box2 {
     gap: 30px;
   }
-  #katVert{
+
+  #katVert {
     height: 400px;
   }
-  #chart{
+
+  #chart {
     width: 350px;
     height: 350px;
   }
+
+  #presale {
+    width: calc(80vw - 120px) !important;
+  }
+
+  #cadenas {
+    height: 200px;
+  }
+
 }

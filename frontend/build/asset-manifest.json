@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.e1ed24d0.css",
-    "main.js": "/static/js/main.bfdea26e.js",
+    "main.css": "/static/css/main.0dc3dc32.css",
+    "main.js": "/static/js/main.e53d571e.js",
     "static/js/171.d986189b.chunk.js": "/static/js/171.d986189b.chunk.js",
     "static/js/400.c84d54de.chunk.js": "/static/js/400.c84d54de.chunk.js",
     "static/media/catLogo.png": "/static/media/catLogo.e6fc6e6139b2a87887df.png",
@@ -15,13 +15,13 @@
     "static/media/walletconnect.png": "/static/media/walletconnect.9f823c8845fe5055a070.png",
     "static/media/close.png": "/static/media/close.76608c97ea3351d43407.png",
     "index.html": "/index.html",
-    "main.e1ed24d0.css.map": "/static/css/main.e1ed24d0.css.map",
-    "main.bfdea26e.js.map": "/static/js/main.bfdea26e.js.map",
+    "main.0dc3dc32.css.map": "/static/css/main.0dc3dc32.css.map",
+    "main.e53d571e.js.map": "/static/js/main.e53d571e.js.map",
     "171.d986189b.chunk.js.map": "/static/js/171.d986189b.chunk.js.map",
     "400.c84d54de.chunk.js.map": "/static/js/400.c84d54de.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e1ed24d0.css",
-    "static/js/main.bfdea26e.js"
+    "static/css/main.0dc3dc32.css",
+    "static/js/main.e53d571e.js"
   ]
 }
