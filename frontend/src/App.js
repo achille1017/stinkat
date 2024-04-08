@@ -43,8 +43,7 @@ function App() {
       </div>
       <div id="box1">
         <p id="text1" className='LemonMilk'>STINKAT</p>
-        <p id="text2">
-          You smell that ? It's STINKAT !  </p>
+
         <div id="box2">
 
           <Timer deadline="2024-04-11 14:0:0 GMT"></Timer>

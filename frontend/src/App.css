@@ -24,7 +24,7 @@ a {
 .App {
   display: flex;
   flex-direction: column;
-  gap: 100px;
+  gap: 10vh;
 }
 
 #about {
@@ -380,7 +380,14 @@ canvas {
 #cadenas {
   height: 300px;
 }
-
+@media screen and (min-width: 2200px) {
+  #text1{
+    font-size: 180px;
+  }
+  #box2{
+    font-size: 70px;
+  }
+}
 @media screen and (max-width: 1500px) {
   .timerP {
     font-size: 10px;
