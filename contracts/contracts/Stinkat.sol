@@ -1,5 +1,3 @@
-// SPDX-License-Identifier: MIT
-
 pragma solidity ^0.8.0;
 
 
@@ -368,7 +366,7 @@ pragma solidity ^0.8.0;
 
 
 contract Stinkat is ERC20, ERC20Burnable, Ownable {
-    uint256 private constant INITIAL_SUPPLY = 10000000000 * 10**18;
+    uint256 private constant INITIAL_SUPPLY = 10000000 * 10**18;
 
     constructor() ERC20("Stinkat", "STINKAT") {
         _mint(msg.sender, INITIAL_SUPPLY);

@@ -9,11 +9,7 @@ const __filename = fileURLToPath(import.meta.url);
 
 const __dirname = path.dirname(__filename);
 
-//app.use('/pdf', express.static(__dirname + '/static'));
 
-/*app.get('/', (req, res) => {
-  res.send('HOMESITE')
-})*/
 app.use(express.static("/frontend/build/"))
 
 app.get('/static/:dir/:file', (req, res) => {

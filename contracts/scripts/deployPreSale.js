@@ -12,7 +12,7 @@ async function main() {
     //const lockedAmount = hre.ethers.utils.parseEther("0.001");
 
     const Presale = await hre.ethers.getContractFactory("Presale");
-    const presale = await Presale.deploy("0xA4849FA02226628E412063e1E7ffF06EbcD6C705");
+    const presale = await Presale.deploy("0x4b014661d31fB3f88d8f6C244689d46f0eb68a71");
     console.log(
         `Presale deployed to ${presale.target}`
     );

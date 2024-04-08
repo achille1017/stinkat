@@ -49,15 +49,15 @@ function App() {
           <Timer deadline="2024-04-11 14:0:0 GMT"></Timer>
           <p id='until'>Until the $STINKAT PreSale</p>
         </div>
-   
+
 
       </div>
-      {
+      {/*
         <div id="presale">
         <p className="whiteP titleBox">PRESALE</p>
         <img src={cadenas} id='cadenas'></img>
-        </div>
-        //<PreSale></PreSale>
+        </div>*/
+        <PreSale></PreSale>
       }
       <RevealOnScroll>
 
