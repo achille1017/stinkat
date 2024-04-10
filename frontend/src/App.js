@@ -33,7 +33,7 @@ function App() {
           <a className='linkNavBar' href='#about'>ABOUT</a>
           <a className='linkNavBar' href='#tokenomics2'>TOKENOMICS</a>
           <a className='linkNavBar' href='https://twitter.com/stinkatbase'>TWITTER</a>
-          <a className='linkNavBar' href='https://t.me/stinkatportal'>TELEGRAM</a>
+          <a className='linkNavBar' href='https://t.me/stinkatpublic'>TELEGRAM</a>
         </div>
         <div id='timerDiv'>
           <Timer deadline="2024-04-11 14:0:0 GMT"></Timer>
@@ -52,12 +52,12 @@ function App() {
 
 
       </div>
-      {/*
+      {
         <div id="presale">
         <p className="whiteP titleBox">PRESALE</p>
         <img src={cadenas} id='cadenas'></img>
-        </div>*/
-        <PreSale></PreSale>
+        </div>
+        //<PreSale></PreSale>
       }
       <RevealOnScroll>
 
@@ -65,13 +65,12 @@ function App() {
           <p className='titleBox whiteP'>ROADMAP</p>
           <div className='lineHowToBuy'>
             <p className='numberHTB'>11/04</p>
-            <p className='howToBuyP'>PRESALE AT 02:00 PM GMT (14:00 GMT) on stinkat.xyz : 4,400,000 tokens available for 24 hours. Get 660 $STINKAT for 0.0003 ETH. Max 198,000 tokens per wallet. Unsold tokens will be burned.</p>
+            <p className='howToBuyP'>PRESALE AT 02:00 PM GMT (14:00 GMT) on stinkat.xyz : 4,400,000 tokens available for 72 hours. Get 660 $STINKAT for 0.0003 ETH. Max 198,000 tokens per wallet. Unsold tokens will be burned.</p>
           </div>
           <div className='lineHowToBuy'>
-            <p className='numberHTB'>14/04</p>
+            <p className='numberHTB'>16/04</p>
             <p className='howToBuyP'>PUBLIC SALE BEGINS AT 14:00 GMT! 100% of presale funds allocated to liquidity. The same amout of tokens that were bought during the presale will be available, the rest will be burnt.</p>
           </div>
-
           <div className='lineHowToBuy'>
             <p className='numberHTB'>01/05</p>
             <p className='howToBuyP' id="tokenomics">SPECIAL EVENT : Announcement of a BIG launch. Exclusives rewards for holders.</p>
@@ -136,7 +135,7 @@ function App() {
           <p className='titleBox whiteP'>JOIN US NOW</p>
           <div id='joinUsDiv'>
             <a className='linkJoinUs' href='https://twitter.com/stinkatbase'>TWITTER</a>
-            <a className='linkJoinUs' href='https://t.me/stinkatportal'>TELEGRAM</a>
+            <a className='linkJoinUs' href='https://t.me/stinkatpublic'>TELEGRAM</a>
           </div>
         </div>
       </RevealOnScroll>
@@ -146,7 +145,7 @@ function App() {
         <a className='linkNavBar whiteP' href='#about' onClick={toggleMenuMobile}>ABOUT</a>
         <a className='linkNavBar whiteP' href='#tokenomics' onClick={toggleMenuMobile}>TOKENOMICS</a>
         <a className='linkNavBar whiteP' href='https://twitter.com/stinkatbase'>TWITTER</a>
-        <a className='linkNavBar whiteP' href='https://t.me/stinkatportal'>TELEGRAM</a>
+        <a className='linkNavBar whiteP' href='https://t.me/stinkatpublic'>TELEGRAM</a>
       </div>
     </div>
   );
