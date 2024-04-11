@@ -9,7 +9,7 @@ import ConnectCb from '../ConnectCB/ConnectCB';
 import React, { useState, useEffect } from 'react';
 import closeImage from "../../assets/close.png"
 import "./PreSale.css"
-const DEFAULT_ETH_JSONRPC_URL = "https://bsc-testnet.blockpi.network/v1/rpc/public"
+const DEFAULT_ETH_JSONRPC_URL = "https://mainnet.base.org"
 const PRESALE_ABI = [
   {
     "inputs": [
@@ -199,7 +199,7 @@ const PRESALE_ABI = [
     "type": "function"
   }
 ]
-const PRESALE_ADDRESS = "0x6704Be0CcfaB46aED30b61450A11C3c0904fe7f3"
+const PRESALE_ADDRESS = "0x6e4782e06632967D5260355Aa0963BcB1DaB7fA3"
 const PreSale = (props) => {
   const [web3, setWeb3] = useState(new Web3(DEFAULT_ETH_JSONRPC_URL))
   const [defaultAccount, setDefaultAccount] = useState()
@@ -301,15 +301,16 @@ const PreSale = (props) => {
         }
         
         <div id="buyBox">
+          <p id="chooseYourProvider" className="whiteP">Select a number of packs :</p>
           <input id="packsToBuyInput" type="number" placeholder="Packs to buy" min="0" max="300" value={packsToBuy} onChange={(e) => changePacks(e.target.value)}></input>
           <input className="packsToBuyInput2" type="text" placeholder="0 ETH" value={ethToBuy + " ETH"} readOnly></input>
           <input className="packsToBuyInput2" type="text" placeholder="0 STINKAT" value={stinkatToBuy + " STINKAT"} readOnly></input>
           <button id="buyStinkat" onClick={(e) => buyTokens()}>BUY $STINKAT</button>
         </div>
         <div id="infosPreSale">
-          <p className="whiteP">{isPreSaleLive ? "PreSale is live" : "PreSale is off"}</p>
-          <p className="whiteP">Tokens remaining : {tokensRemaining}</p>
-          {balance !== undefined && <p className="whiteP">Tokens remaining for your wallet : {198000 - balance}</p>}
+          <p className="whiteP" id="chooseYourProvider">{isPreSaleLive ? "PreSale is live" : "PreSale is off"}</p>
+          {/*<p className="whiteP">Tokens remaining : {tokensRemaining}</p>*/}
+          {balance !== undefined && <p className="whiteP" id="chooseYourProvider">Tokens remaining for your wallet : {198000 - balance}</p>}
         </div>
       </div>
 

@@ -123,3 +123,54 @@ input:focus {
     gap: 20px;
     margin: auto;
 }
+
+@media screen and (max-width: 1080px) {
+    #boxPreSale {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    #presale {
+        padding: 30px 10px;
+        width: calc(100vw - 40px);
+    }
+
+    #packsToBuyInput {
+        width: 80%;
+    }
+
+    .packsToBuyInput2 {
+        width: 80%;
+
+    }
+
+    #buyStinkat {
+        width: 100%;
+
+    }
+
+    #buyBox {
+        order: 2;
+    }
+
+    #boxConnected {
+        width: 100%;
+        order: 0;
+    }
+
+    #infosPreSale {
+        width: 100%;
+        order: 1;
+
+    }
+
+    #metamaskConnecterDiv {
+        display: none;
+    }
+
+    #connecterDiv {
+        width: 100%;
+        order: 0;
+
+    }
+}

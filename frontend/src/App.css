@@ -35,7 +35,9 @@ a {
 #tokenomics {
   text-shadow: 0 0 6px rgba(202, 228, 225, .92), 0 0 30px rgba(202, 228, 225, .34), 0 0 12px rgba(30, 132, 242, .52), 0 0 21px rgba(30, 132, 242, .92), 0 0 34px rgba(30, 132, 242, .78), 0 0 54px rgba(30, 132, 242, .92);
 }
-
+#until{
+  font-size: 70px;
+}
 #topBar {
   position: sticky;
   top: 0px;
@@ -626,9 +628,6 @@ canvas {
     height: 350px;
   }
 
-  #presale {
-    width: calc(80vw - 120px) !important;
-  }
 
   #cadenas {
     height: 200px;
